@@ -13,7 +13,15 @@
 \newcommand{\slidesetsubtitle}{}
 \newcommand{\logoimagepath}{logos/polytechnique_logo}
 \newcommand{\logoimagepathlab}{logos/Logo-LM2-nowriting}
-\newcommand{\lastimagepath}{logos/lm2_may2018.png}
+\newcommand{\lastimagepath}{logos/LM2_team2019.jpg}
+
+% Sponsor logos
+% Go into header-commands.tex in the "DEFINE LAST SLIDE" section to enable the appropriate number of logos
+\newcommand{\logoA}{logos/logo_CRSNG.pdf}
+\newcommand{\logoB}{logos/crepecLogoFinaux2015.pdf}
+\newcommand{\logoC}{logos/crepecLogoFinaux2015.pdf}
+\newcommand{\logoD}{logos/logo_CRSNG.pdf}
+\newcommand{\logoE}{logos/logo_CRSNG.pdf}
 
 % ==========================================================
 %% PACKAGES
@@ -33,6 +41,7 @@
 \usepackage{import}
 \usepackage{media9}
 \usepackage{subfig}
+\usepackage{siunitx}
 \DeclareCaptionLabelSeparator{horse}{:\quad} % change according to your needs
 \usepackage{textcomp,amsfonts,stmaryrd,soulutf8}
 \usepackage{xifthen}% provides \isempty test
@@ -72,11 +81,13 @@
 
 \captionsetup{font=scriptsize, labelfont=scriptsize}
 
-
 \input{./sections/00-introduction.tex}
+\input{./sections/10-context.tex}
+\input{./sections/20-objectives.tex}
+\input{./sections/30-methodology.tex}
+\input{./sections/40-results.tex}
+\input{./sections/90-conclusion.tex}
 %=================================================================================================
 %=================================================================================================
-
-
 
 \end{document}
